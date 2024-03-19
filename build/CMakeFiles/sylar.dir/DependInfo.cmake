@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/wenwenyuyu/sylar/sylar/config.cc" "/home/wenwenyuyu/sylar/build/CMakeFiles/sylar.dir/sylar/config.cc.o"
+  "/home/wenwenyuyu/sylar/sylar/fiber.cc" "/home/wenwenyuyu/sylar/build/CMakeFiles/sylar.dir/sylar/fiber.cc.o"
   "/home/wenwenyuyu/sylar/sylar/log.cc" "/home/wenwenyuyu/sylar/build/CMakeFiles/sylar.dir/sylar/log.cc.o"
   "/home/wenwenyuyu/sylar/sylar/mutex.cc" "/home/wenwenyuyu/sylar/build/CMakeFiles/sylar.dir/sylar/mutex.cc.o"
   "/home/wenwenyuyu/sylar/sylar/thread.cc" "/home/wenwenyuyu/sylar/build/CMakeFiles/sylar.dir/sylar/thread.cc.o"

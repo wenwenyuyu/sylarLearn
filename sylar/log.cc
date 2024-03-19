@@ -29,10 +29,12 @@ namespace sylar{
      */
 LogEvent::LogEvent(std::shared_ptr<Logger> logger, LogLevel::Level level,
                    const char *file, uint32_t line, uint32_t elapse,
-                   uint32_t threadId, uint32_t fiberId, uint64_t time)
+                   uint32_t threadId, uint32_t fiberId, uint64_t time,
+                   const std::string &threadName)
     : m_file(file), m_line(line), m_elapse(elapse), m_threadId(threadId),
-      m_fiberId(fiberId), m_time(time), m_logger(logger),
-      m_level(level){}
+      m_fiberId(fiberId), m_time(time), m_threadName(threadName),
+      m_logger(logger), m_level(level) {}
+
 /**
  * @func: 
  * @param {char} *fmt
@@ -217,6 +219,14 @@ std::stringstream &LogEventWrap::getSS() { return m_event->getSS(); }
             os << "\t";
         }
     };
+
+    class ThreadNameFormatItem : public LogFormatter::FormatItem{
+    public:
+        ThreadNameFormatItem(const std::string& str = ""){}
+        void format(std::ostream& os, std::shared_ptr<Logger> logger,LogLevel::Level level, LogEvent::ptr event) override {
+            os << event->getThreadName() << "    ";
+        }
+    };
     /**
      * @func: LogFormatter
      * @param {string&} pattern
@@ -352,6 +362,7 @@ std::stringstream &LogEventWrap::getSS() { return m_event->getSS(); }
               XX(l, LineFormatItem),
               XX(F, FiberIdFormatItem),
               XX(T, TabFormatItem),
+              XX(N, ThreadNameFormatItem)
         #undef XX
         };
 
@@ -379,7 +390,7 @@ std::stringstream &LogEventWrap::getSS() { return m_event->getSS(); }
         :m_name(name)
         ,m_level(LogLevel::DEBUG){
       m_formatter.reset(new LogFormatter(
-          "%d{%Y-%m-%d %H:%M:%S}%T%t%T%F%T[%p]%T[%c]%T[%f:%l]%T%m%n"));
+          "%d{%Y-%m-%d %H:%M:%S}%T%t%T%N%F%T[%p]%T[%c]%T[%f:%l]%T%m%n"));
     }
 
     void Logger::log(LogLevel::Level level, LogEvent::ptr event){

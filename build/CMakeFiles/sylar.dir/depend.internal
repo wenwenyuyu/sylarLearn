@@ -3,13 +3,25 @@
 
 CMakeFiles/sylar.dir/sylar/config.cc.o
  ../sylar/mutex.h
+ ../sylar/thread.h
  /home/wenwenyuyu/sylar/sylar/config.cc
  /home/wenwenyuyu/sylar/sylar/config.h
  /home/wenwenyuyu/sylar/sylar/log.h
  /home/wenwenyuyu/sylar/sylar/singleton.h
  /home/wenwenyuyu/sylar/sylar/util.h
+CMakeFiles/sylar.dir/sylar/fiber.cc.o
+ ../sylar/config.h
+ ../sylar/log.h
+ ../sylar/marco.h
+ ../sylar/mutex.h
+ ../sylar/singleton.h
+ ../sylar/thread.h
+ ../sylar/util.h
+ /home/wenwenyuyu/sylar/sylar/fiber.cc
+ /home/wenwenyuyu/sylar/sylar/fiber.h
 CMakeFiles/sylar.dir/sylar/log.cc.o
  ../sylar/mutex.h
+ ../sylar/thread.h
  /home/wenwenyuyu/sylar/sylar/config.h
  /home/wenwenyuyu/sylar/sylar/log.cc
  /home/wenwenyuyu/sylar/sylar/log.h
@@ -22,9 +34,15 @@ CMakeFiles/sylar.dir/sylar/thread.cc.o
  ../sylar/log.h
  ../sylar/mutex.h
  ../sylar/singleton.h
+ ../sylar/thread.h
  ../sylar/util.h
  /home/wenwenyuyu/sylar/sylar/thread.cc
  /home/wenwenyuyu/sylar/sylar/thread.h
 CMakeFiles/sylar.dir/sylar/util.cc.o
+ ../sylar/fiber.h
+ ../sylar/log.h
+ ../sylar/mutex.h
+ ../sylar/singleton.h
+ ../sylar/thread.h
  /home/wenwenyuyu/sylar/sylar/util.cc
  /home/wenwenyuyu/sylar/sylar/util.h

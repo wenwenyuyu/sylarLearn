@@ -12,6 +12,8 @@ CXX_INCLUDES = -I/home/wenwenyuyu/sylar/.
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/util.cc.o_DEFINES = __FILE__="sylar/util.cc"
 
+# Custom defines: CMakeFiles/sylar.dir/sylar/fiber.cc.o_DEFINES = __FILE__="sylar/fiber.cc"
+
 # Custom defines: CMakeFiles/sylar.dir/sylar/config.cc.o_DEFINES = __FILE__="sylar/config.cc"
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/thread.cc.o_DEFINES = __FILE__="sylar/thread.cc"

@@ -3,6 +3,7 @@
 
 CMakeFiles/test.dir/tests/test.cc.o
  ../sylar/mutex.h
+ ../sylar/thread.h
  /home/wenwenyuyu/sylar/sylar/log.h
  /home/wenwenyuyu/sylar/sylar/singleton.h
  /home/wenwenyuyu/sylar/sylar/util.h
