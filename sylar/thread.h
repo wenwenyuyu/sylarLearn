@@ -2,7 +2,7 @@
  * @Author       : wenwneyuyu
  * @Date         : 2024-03-16 11:45:25
  * @LastEditors  : wenwenyuyu
- * @LastEditTime : 2024-03-16 17:08:50
+ * @LastEditTime : 2024-03-20 12:17:24
  * @FilePath     : /sylar/thread.h
  * @Description  : 
  * Copyright 2024 OBKoro1, All Rights Reserved. 
@@ -24,9 +24,7 @@ class Thread {
 public:
   typedef std::shared_ptr<Thread> ptr;
   Thread(const Thread &) = delete;
-  Thread(const Thread &&) = delete;
   Thread &operator=(const Thread &) = delete;
-  Thread &operator=(const Thread &&) = delete;
 
   Thread(std::function<void()> cb, const std::string name);
   ~Thread();

@@ -2,7 +2,7 @@
  * @Author       : wenwneyuyu
  * @Date         : 2024-03-18 14:09:10
  * @LastEditors  : wenwenyuyu
- * @LastEditTime : 2024-03-19 19:45:39
+ * @LastEditTime : 2024-03-22 20:41:52
  * @FilePath     : /sylar/fiber.h
  * @Description  : 
  * Copyright 2024 OBKoro1, All Rights Reserved. 
@@ -19,7 +19,8 @@
 
 namespace sylar {
 
-class Fiber : public std::enable_shared_from_this<Fiber>{
+class Fiber : public std::enable_shared_from_this<Fiber> {
+  friend class Scheduler;
 public:
   typedef std::shared_ptr<Fiber> ptr;
 
@@ -46,6 +47,12 @@ public:
   State getState() const { return m_state; }
   static uint64_t TotalFibers();
   static uint64_t GetId();
+
+  // static void MainFunc();
+  // static void CallerMainFunc();
+  // void call();
+  // void back();
+
 private:
   Fiber();
 private:
@@ -54,7 +61,7 @@ private:
   void *m_stack = nullptr;
   std::uint32_t m_stacksize = 0;
   std::function<void()> m_cb;
-  State m_state;
+  State m_state = INIT;
 };
 
 }

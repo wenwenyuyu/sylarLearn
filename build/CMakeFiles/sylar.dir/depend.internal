@@ -11,9 +11,11 @@ CMakeFiles/sylar.dir/sylar/config.cc.o
  /home/wenwenyuyu/sylar/sylar/util.h
 CMakeFiles/sylar.dir/sylar/fiber.cc.o
  ../sylar/config.h
+ ../sylar/fiber.h
  ../sylar/log.h
  ../sylar/marco.h
  ../sylar/mutex.h
+ ../sylar/scheduler.h
  ../sylar/singleton.h
  ../sylar/thread.h
  ../sylar/util.h
@@ -30,6 +32,16 @@ CMakeFiles/sylar.dir/sylar/log.cc.o
 CMakeFiles/sylar.dir/sylar/mutex.cc.o
  /home/wenwenyuyu/sylar/sylar/mutex.cc
  /home/wenwenyuyu/sylar/sylar/mutex.h
+CMakeFiles/sylar.dir/sylar/scheduler.cc.o
+ ../sylar/fiber.h
+ ../sylar/marco.h
+ ../sylar/mutex.h
+ ../sylar/thread.h
+ ../sylar/util.h
+ /home/wenwenyuyu/sylar/sylar/log.h
+ /home/wenwenyuyu/sylar/sylar/scheduler.cc
+ /home/wenwenyuyu/sylar/sylar/scheduler.h
+ /home/wenwenyuyu/sylar/sylar/singleton.h
 CMakeFiles/sylar.dir/sylar/thread.cc.o
  ../sylar/log.h
  ../sylar/mutex.h

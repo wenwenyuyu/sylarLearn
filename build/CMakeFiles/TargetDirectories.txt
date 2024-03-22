@@ -1,3 +1,4 @@
+/home/wenwenyuyu/sylar/build/CMakeFiles/test_scheduler.dir
 /home/wenwenyuyu/sylar/build/CMakeFiles/test_fiber.dir
 /home/wenwenyuyu/sylar/build/CMakeFiles/rebuild_cache.dir
 /home/wenwenyuyu/sylar/build/CMakeFiles/test_util.dir
